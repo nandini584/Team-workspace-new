@@ -1,13 +1,14 @@
 import React from 'react';
 import Sidebar from './Sidebar';
-import MainContent from './MainContent';
 
 function MainDashboard() {
-    console.log('Working');
   return (
-    <div className="">
+    <div className="flex">
       <Sidebar />
-      <MainContent />
+      <main className="p-10">
+        <h1 className="text-2xl">Progress Title</h1>
+        <p className="pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla.</p>
+      </main>
     </div>
   );
 }

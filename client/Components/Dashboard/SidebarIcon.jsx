@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SidebarIcon = ({ Icon }) => {
+const SidebarIcon = ({ iconSrc }) => {
   const [hover, setHover] = useState(false);
 
   return (
@@ -9,7 +9,7 @@ const SidebarIcon = ({ Icon }) => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <Icon size={30} />
+      <img src={iconSrc} alt="Icon" className="w-8 h-8" />
       {hover && <div className="w-3 h-3 rounded-full bg-customRed"></div>}
     </div>
   );

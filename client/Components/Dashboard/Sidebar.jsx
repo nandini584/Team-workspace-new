@@ -1,30 +1,35 @@
 import React from 'react';
 import SidebarIcon from './SidebarIcon';
-import { ReactComponent as Home } from '../../client/assets/MainDashboard/home.svg';
-import { ReactComponent as Profile } from '../../client/assets/MainDashboard/profileImage.svg';
-import { ReactComponent as Tasks } from '../../client/assets/MainDashboard/task.svg';
-import { ReactComponent as Team } from '../../client/assets/MainDashboard/team.svg';
-import { ReactComponent as Project } from '../../client/assets/MainDashboard/project.svg';
-import { ReactComponent as Chat } from '../../client/assets/MainDashboard/chat.svg';
-import { ReactComponent as Notifications } from '../../client/assets/MainDashboard/notifications.svg';
 
+import Profile from '../../assets/MainDashboard/profileImage.svg';
+import Home from '../../assets/MainDashboard/home.svg';
+import Tasks from '../../assets/MainDashboard/task.svg';
+import Team from '../../assets/MainDashboard/team.svg';
+import Project from '../../assets/MainDashboard/project.svg';
+import Chat from '../../assets/MainDashboard/chat.svg';
+import Notifications from '../../assets/MainDashboard/notifications.svg';
 
-const Sidebar = () => {
-    return (
-        <div className="h-screen bg-gray-800 text-white w-24 py-7 pr-2 pl-6 absolute inset-y-0 left-0 transform transition duration-200 ease-in-out border-r border-lightGrey flex flex-col justify-start">
-            <div className="space-y-6">
-                <SidebarIcon Icon={Profile} />
-                <SidebarIcon Icon={Home} />
-            </div>
-            <div className="mt-48 space-y-6">
-                <SidebarIcon Icon={Tasks} />
-                <SidebarIcon Icon={Team} />
-                <SidebarIcon Icon={Project} />
-                <SidebarIcon Icon={Chat} />
-                <SidebarIcon Icon={Notifications} />
-            </div>
-        </div>
-    );
-};
+function Sidebar() {
+  return (
+    <div className="h-screen bg-blue-500 w-16 flex flex-col items-center py-8 space-y-8 border-r border-lightGray">
+      <div className="flex flex-col items-center space-y-8">
+        <SidebarIcon iconSrc={Profile} />
+        <SidebarIcon iconSrc={Home} />
+      </div>
+
+      <div className="h-32"></div>
+
+      <div className="flex flex-col items-center space-y-8">
+        <SidebarIcon iconSrc={Tasks} />
+        <SidebarIcon iconSrc={Team} />
+        <SidebarIcon iconSrc={Project} />
+        <SidebarIcon iconSrc={Chat} />
+        <SidebarIcon iconSrc={Notifications} />
+      </div>
+
+      <div className="flex-grow"></div>
+    </div>
+  );
+}
 
 export default Sidebar;
