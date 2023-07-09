@@ -10,11 +10,13 @@ export default {
   theme: {
     extend: {},
     colors:{
+      "customRed": '#FF5F2B',
       "muted-neutral":"#FFC5B2",
       "neutral":"#FF9E80",
       "main":"#FF764A",
       "dark":"#FF5F2B",
       "muted-dark":"#D74126",
+      "lightGrey": '#0000004D',
     },
     fontfamily:{
       jost: ['Jost'],
