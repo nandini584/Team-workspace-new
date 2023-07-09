@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+.signup{
+    width: 19.625rem;
+    height: 2.8125rem;
+    flex-shrink: 0;
+    padding: 0.88rem 0;
+    background-color: #FF764A;
+    color: white;
+    border-radius: 100px;
+}
+.tab{
+    width: 15.6875rem;
+    height: 2.3125rem;
+    flex-shrink: 0;
+    border-radius: 2.5rem;
+    background: #FFF;
+    padding: 0.44rem 0;
+    color: black;
+}
