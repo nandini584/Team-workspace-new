@@ -1,0 +1,6 @@
+.column-heading::before {
+    content: "|";
+    color: #ff764a;
+    margin-right: 5px;
+  }
+  

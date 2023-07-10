@@ -11,7 +11,7 @@ import Notifications from '../../assets/MainDashboard/notifications.svg';
 
 function Sidebar() {
   return (
-    <div className="h-screen bg-blue-500 w-16 flex flex-col items-center py-8 space-y-8 border-r border-lightGray">
+    <div className="h-screen bg-[#1a1a1a] w-16 flex flex-col items-center py-8 space-y-8 border-r border-lightGray flex-shrink-0">
       <div className="flex flex-col items-center space-y-8">
         <SidebarIcon iconSrc={Profile} />
         <SidebarIcon iconSrc={Home} />
