@@ -17,6 +17,7 @@ export default {
       "dark":"#FF5F2B",
       "muted-dark":"#D74126",
       "lightGrey": '#0000004D',
+      "white": 'white',
     },
     fontfamily:{
       jost: ['Jost'],
