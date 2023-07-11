@@ -3,7 +3,9 @@ import Project from "../../Components/ProjectDisplay/Project";
 
 function ProjectDisplay() {
     return (
-        <Project />
+        <div className="relative">
+            <Project />
+        </div>
     )
 }
 export default ProjectDisplay;

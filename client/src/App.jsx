@@ -9,11 +9,11 @@ import Project from "../Pages/Project/ProjectDisplay"
 const App = () => {
   return (
     < >
-    {/* <Login />
-    <Register /> */}
+    {/* <Login /> */}
+    {/* <Register /> */}
     {/* <ForgetPswd/> */}
-    {/* <PersonalDasboard></PersonalDasboard>
-    <MainDashboard /> */}
+    {/* <PersonalDasboard></PersonalDasboard> */}
+    {/* <MainDashboard /> */}
     <Project />
     </>
   )
