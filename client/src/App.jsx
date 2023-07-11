@@ -12,7 +12,7 @@ const App = () => {
     <Register /> */}
     {/* <ForgetPswd/> */}
     {/* <MainDashboard /> */}
-    <PersonalDasboard></PersonalDasboard>
+    {/* <PersonalDasboard></PersonalDasboard> */}
     </>
   )
 }

@@ -6,7 +6,7 @@ function CircularProgress() {
   const progress = 50; // 50% progress
   const strokeDashoffset = circumference - (progress / 100) * circumference;
   return (
-    <div className="w-[100px] h-[100px] flex items-center justify-center">
+    <div className="w-[100px] h-[100px] flex items-center justify-center flex-shrink-0">
       <svg className="w-full h-ful " viewBox="0 0 44 44">
         <circle
           className="stroke-current text-[#a2a1a1]"

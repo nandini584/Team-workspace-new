@@ -6,15 +6,15 @@ function Dashboard() {
   return (
     <div className="flex justify-around mb-5">
       <div className="flex flex-col min-w-[350px] px-4">
-        <div className="column-heading">To Do</div>
+        <div className="column-heading ">To Do</div>
         <TaskCard title="Task title" dueDate="07/20/2023" />
       </div>
       <div className="flex flex-col min-w-[350px] px-4">
-        <div className="column-heading">High Priority</div>
+        <div className="column-heading ">High Priority</div>
         <TaskCard title="Task title" dueDate="07/15/2023" />
       </div>
       <div className="flex flex-col min-w-[350px] px-4">
-        <div className="column-heading">Done</div>
+        <div className="column-heading ">Done</div>
         <TaskCard title="Task title" dueDate="07/05/2023" />
       </div>
     </div>
