@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function TaskCard({ title, dueDate }) {
+function TaskCard({ title, dueDate, skill }) {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxClick = () => {
@@ -10,7 +10,7 @@ function TaskCard({ title, dueDate }) {
   return (
     <div className="bg-white shadow-lg rounded-lg p-5 mb-4">
       <span className="bg-[#ff764a] text-[#fff] rounded-full inline-flex items-center justify-center py-1 px-3">
-        Skills
+        {skill}
       </span>
       <div className="flex items-center mt-2">
         <div
