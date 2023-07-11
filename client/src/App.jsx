@@ -5,14 +5,16 @@ import ForgetPswd from '../Components/Register/ForgetPswd'
 import MainDashboard from '../Components/Dashboard/MainDashboard'
 import MainContent from '../Components/Dashboard/MainContent'
 import PersonalDasboard from '../Pages/Project/PersonalDashboard'
+import Project from "../Pages/Project/ProjectDisplay"
 const App = () => {
   return (
     < >
     {/* <Login />
     <Register /> */}
     {/* <ForgetPswd/> */}
-    {/* <MainDashboard /> */}
-    {/* <PersonalDasboard></PersonalDasboard> */}
+    {/* <PersonalDasboard></PersonalDasboard>
+    <MainDashboard /> */}
+    <Project />
     </>
   )
 }
