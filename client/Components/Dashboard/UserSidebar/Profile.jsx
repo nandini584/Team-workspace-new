@@ -2,7 +2,7 @@ import React from 'react'
 import Profileimg from '../../../assets/MainDashboard/profileImage.svg'
 const Profile = () => {
   return (
-    <div className='flex flex-row items-center'>
+    <div className='flex flex-row items-center text-white'>
         <img src={Profileimg} alt="profile img" />
         <div className='flex flex-col ml-4'>
             <h1 className='font-jost font-medium text-sm'>Good Morning,</h1>

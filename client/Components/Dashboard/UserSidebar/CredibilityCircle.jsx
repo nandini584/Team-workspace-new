@@ -1,6 +1,5 @@
 import React from 'react'
 import { sizing } from '@mui/system';
-
 import CircularProgress from '@mui/material/CircularProgress';
 const normalise = (value) => ((value - 0) * 100) / (100 - 0);
 const CredibilityCircle = (props) => {
