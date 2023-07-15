@@ -5,17 +5,27 @@ import ForgetPswd from '../Components/Register/ForgetPswd'
 import MainDashboard from '../Components/Dashboard/MainDashboard'
 import MainContent from '../Components/Dashboard/MainContent'
 import PersonalDasboard from '../Pages/Project/PersonalDashboard'
-import Project from "../Pages/Project/ProjectDisplay"
+import CreateProject1 from '../Pages/Project/CreateProject1'
+import CreateProject2 from '../Pages/Project/CreateProject2'
+import ProjectPage from '../Pages/Project/ProjectPage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 const App = () => {
   return (
-    < >
-    <Login />
-    <Register />
-    <ForgetPswd/>
-    <PersonalDasboard></PersonalDasboard>
-    <MainDashboard />
-    <Project />
+    <>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/api/v1/login/:userid" element={<Login />}></Route> 
+    <Route path="/api/v1/register" element={<Register />}></Route> 
+    <Route path="/api/v1/password/forget" element={<ForgetPswd />}></Route> 
+    <Route path="/api/v1/projectdashboard/:userid" element={<PersonalDasboard />}></Route> 
+    <Route path="/api/v1/projectdashboard/:userid/projects/:projectid/tasks" element={<MainDashboard />}></Route> 
+    <Route path="/api/v1/createproject/:projectid" element={<CreateProject1 />}></Route> 
+    <Route path="/api/v1/users/:userid/projectpage/:projectid" element={<ProjectPage />}></Route> 
+    {/* <CreateProject2></CreateProject2> */}
+    </Routes>
+    </BrowserRouter>
     </>
+    
   )
 }
 

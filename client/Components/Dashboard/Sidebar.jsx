@@ -17,7 +17,7 @@ function Sidebar() {
         <SidebarIcon iconSrc={Home} />
       </div>
 
-      <div className="h-32"></div>
+      <div className="h-10"></div>
 
       <div className="flex flex-col items-center space-y-8">
         <SidebarIcon iconSrc={Tasks} />
