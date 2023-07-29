@@ -10,7 +10,7 @@ const MainContent = () => {
       <div className=" bg-gray-100 p-6 mt-14 ml-11">
         <ProjectTitle title="Project Title"/>
         <div className="flex items-center space-x-6 mt-8 md:mt-8 lg:mt-12">
-          <ProgressBar />
+          <ProgressBar value={45}/>
           <CircularProgress />
         </div>
       </div>
