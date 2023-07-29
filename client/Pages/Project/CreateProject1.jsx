@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import UserSidebar from '../../Components/Dashboard/UserSidebar/UserSidebar'
 import Backarrow from '../../assets/MainDashboard/back.svg'
-import {Link} from 'react-router-dom'
+import {Link, useNavigation} from 'react-router-dom'
 const CreateProject1 = () => {
   const [formInputData, setformInputData] = useState(
     {
@@ -9,12 +9,14 @@ const CreateProject1 = () => {
       projectdescription: '',
      }
   )
+  const history = useNavigation();
   const handleChange=(e)=>{  
     const newInput = (data)=>({...data, [e.target.name]:e.target.value})
    setformInputData(newInput)
 }
   const handleSubmit= (e) =>{
     e.preventDefault();
+    history.push('/api/v1/projectdashboard/:userid', { formData: formInputData });
     const checkEmptyInput = !Object.values(formInputData).every(res=>res==="")
     if(checkEmptyInput)
     {
