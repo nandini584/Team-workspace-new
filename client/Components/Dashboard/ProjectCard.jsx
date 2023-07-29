@@ -5,7 +5,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 const normalise = (value) => ((value - 0) * 100) / (100 - 0);
 const ProjectCard = (props) => {
   return (
-    <div className=' w-[18rem] h-[20rem] bg-white rounded-2xl p-6 mr-10 mb-10'>
+    <div className={`h-[20rem] bg-white rounded-2xl p-6 mr-10 mb-5 w-[17rem] px-2`}>
         <div className='flex flex-row justify-between mb-8'>
         <Tags tags="UI/UX Design" color="neutral"></Tags>
         <img src={Profile} alt="profileimg" className='rounded-full w-[2.43rem]' />

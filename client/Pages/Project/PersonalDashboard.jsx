@@ -1,33 +1,35 @@
-import React from 'react'
-import UserSidebar from '../../Components/Dashboard/UserSidebar/UserSidebar'
-import ProjectCard from '../../Components/Dashboard/ProjectCard'
-import Options from '../../Components/Dashboard/Options'
-import Tabs from '../../Components/Dashboard/Tabs'
+import React from "react";
+import UserSidebar from "../../Components/Dashboard/UserSidebar/UserSidebar";
+import ProjectCard from "../../Components/Dashboard/ProjectCard";
+import Options from "../../Components/Dashboard/Options";
+import Tabs from "../../Components/Dashboard/Tabs";
 const PersonalDashboard = () => {
   return (
     <>
-    
-    <div className='flex flex-row bg-[#F8F8F8] sticky'>
+      <div className="flex flex-row bg-[#F8F8F8] sticky h-1/2">
         <UserSidebar></UserSidebar>
-        <div className="px-14 py-24 flex flex-col overflow-y-scroll">
-          <div className='flex flex-row items-center justify-between'>
-        <Tabs></Tabs>
-        <Options></Options>
-          </div>
-          <div className='mt-14 flex flex-row flex-wrap'>
-        <ProjectCard value={78}></ProjectCard>
-        <ProjectCard value={78}></ProjectCard>
-        <ProjectCard value={78}></ProjectCard>
-        <ProjectCard value={78}></ProjectCard>
-        <ProjectCard value={78}></ProjectCard>
-        <ProjectCard value={78}></ProjectCard>
-
+        <div className="px-14 py-8 flex flex-col">
+          <div className="flex flex-row items-center justify-between">
+            <Tabs></Tabs>
+            <Options></Options>
           </div>
 
-        </div>
-    </div>
+            <div className="mt-10 flex flex-column flex-wrap overflow-y-scroll h-[38rem]"  style={{overflow : 'scroll'}}>
+              <ProjectCard value={78}></ProjectCard>
+              <ProjectCard value={78}></ProjectCard>
+              <ProjectCard value={78}></ProjectCard>
+              <ProjectCard value={78}></ProjectCard>
+              <ProjectCard value={78}></ProjectCard>
+              <ProjectCard value={78}></ProjectCard>
+              <ProjectCard value={78}></ProjectCard>
+              <ProjectCard value={78}></ProjectCard>
+              <ProjectCard value={78}></ProjectCard>
+            </div>
+          </div>
+
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default PersonalDashboard
+export default PersonalDashboard;

@@ -8,7 +8,7 @@ function TaskCard({ title, dueDate, skill }) {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg p-5 mb-4">
+    <div className="bg-white shadow-lg rounded-lg p-5 mb-4 my-10">
       <span className="bg-[#ff764a] text-[#fff] rounded-full inline-flex items-center justify-center py-1 px-3">
         {skill}
       </span>
