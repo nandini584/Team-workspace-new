@@ -19,9 +19,9 @@ const App = () => {
     <Route path="/api/v1/password/forget" element={<ForgetPswd />}></Route> 
     <Route path="/api/v1/projectdashboard/:userid" element={<PersonalDasboard />}></Route> 
     <Route path="/api/v1/projectdashboard/:userid/projects/:projectid/tasks" element={<MainDashboard />}></Route> 
-    <Route path="/api/v1/createproject/:projectid" element={<CreateProject1 />}></Route> 
+    <Route path="/api/v1/createproject1/:projectid" element={<CreateProject1 />}></Route> 
+    <Route path="/api/v1/createproject2/:projectid" element={<CreateProject2 />}></Route> 
     <Route path="/api/v1/users/:userid/projectpage/:projectid" element={<ProjectPage />}></Route> 
-    {/* <CreateProject2></CreateProject2> */}
     </Routes>
     </BrowserRouter>
     </>

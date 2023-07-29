@@ -7,7 +7,7 @@ const PersonalDashboard = () => {
   return (
     <>
     
-    <div className='flex flex-row bg-[#F8F8F8] sticky'>
+    <div className='flex flex-row bg-[#F8F8F8] sticky top-0'>
         <UserSidebar></UserSidebar>
         <div className="px-14 py-24 flex flex-col overflow-y-scroll">
           <div className='flex flex-row items-center justify-between'>
@@ -15,11 +15,11 @@ const PersonalDashboard = () => {
         <Options></Options>
           </div>
           <div className='mt-14 flex flex-row flex-wrap'>
+        <ProjectCard value={23}></ProjectCard>
         <ProjectCard value={78}></ProjectCard>
         <ProjectCard value={78}></ProjectCard>
         <ProjectCard value={78}></ProjectCard>
-        <ProjectCard value={78}></ProjectCard>
-        <ProjectCard value={78}></ProjectCard>
+        <ProjectCard value={95}></ProjectCard>
         <ProjectCard value={78}></ProjectCard>
 
           </div>

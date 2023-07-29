@@ -1,15 +1,30 @@
 import React from "react";
-
-function ProgressBar() {
+import LinearProgress from '@mui/material/LinearProgress';
+import {createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+const normalise = (value) => ((value - 0) * 100) / (100 - 0);
+function ProgressBar(props) {
+  const theme = createMuiTheme({
+   palette: {
+      secondary: {
+          main: '#42baf5'
+      }
+   }
+ });
   return (
-    <div className="relative mb-5 pt-1 flex-shrink-0 w-full max-w-[927px] h-[56px]">
-      <div className="mb-2 flex items-center justify-between text-xs">
-        <div className="text-gray-600">Progress</div>
-        <div className="text-gray-600">80%</div>
-      </div>
-      <div className="mb-4 flex h-3 overflow-hidden rounded bg-[#eae8e8]">
-        <div className="w-4/5 bg-green-500 bg-[#FF764A]"></div>
-      </div>
+    <div className="w-[57rem]">
+        <MuiThemeProvider theme={theme}>
+            <LinearProgress  sx={{
+                  backgroundColor: '#EFEFEF',
+                  '& .MuiLinearProgress-bar': {
+                    backgroundColor: '#FF764A'
+                  },
+                  height:"8px",
+                  borderRadius:"20px"
+                }}
+                variant="determinate"
+                 value={normalise(props.value)}/> 
+          </MuiThemeProvider>
+    
     </div>
   );
 }
